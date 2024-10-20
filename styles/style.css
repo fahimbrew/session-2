@@ -130,7 +130,13 @@
     box-shadow: 5px 5px 10px gray;
     border-radius: 8px;
     border: none;
+    transition: transform 1s ease-in, background-color 1.5s ease-in-out;
 
+}
+
+.box:hover {
+    transform: scale(1.1) translateX(10px);
+    background-color: rgb(230, 200, 218);
 }
 
 .box>h2 {
