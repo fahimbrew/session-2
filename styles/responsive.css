@@ -1,9 +1,54 @@
 /* media queries */
+
+
+/* small device */
 @media screen and (max-width:576px) {
 
-    .navbar-main {
+    .navbar-main,
+    .banner-main {
         flex-direction: column;
         gap: 20px;
         align-items: center;
+    }
+
+    .position-element {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .collection {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+
+
+
+/* tablet device */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    /* .banner-main {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    } */
+
+    /* .position-element {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+    } */
+    .position-element {
+        /* left: 50%; */
+
+    }
+
+    .collection {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
 }
