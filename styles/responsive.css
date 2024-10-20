@@ -1,0 +1,9 @@
+/* media queries */
+@media screen and (max-width:576px) {
+
+    .navbar-main {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
