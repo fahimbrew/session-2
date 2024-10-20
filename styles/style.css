@@ -109,9 +109,18 @@
 
 /* popular collection starts here */
 
-.box>img {
-    max-width: 100%;
+.box img {
+    width: 100%;
     border-radius: 10px;
+    max-height: 100%;
+    object-fit: cover;
+    background-size: cover;
+}
+
+.box>div:nth-child(1) {
+    height: 300px;
+    /* border: 2px solid red; */
+    /* width: 300px; */
 }
 
 .box {
